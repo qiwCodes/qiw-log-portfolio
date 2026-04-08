@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aether One
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Aether One is a portfolio piece focused on translating a luxury hardware brand direction into a polished web experience. The project combines editorial-style layout, subtle motion, and a Three.js product stage that stays integrated with the page narrative instead of feeling bolted on.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What This Project Shows
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Cinematic landing-page art direction with a premium product focus
+- Scroll-linked 3D composition built with React Three Fiber and Drei
+- Shared product finish state between UI controls and the rendered model
+- Responsive layouts tuned separately for desktop and mobile storytelling
+- Reusable section/component structure instead of a one-file marketing page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Three.js
+- React Three Fiber
+- Drei
 
-## Learn More
+## Technical Highlights
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The hero and overview states are connected through a scroll-driven interpolation layer rather than isolated scenes, which keeps the transition feeling continuous.
+- Product finish selection is centralized in shared state so the UI and 3D presentation stay synchronized.
+- Motion is layered with restraint: reveal timing, ambient backgrounds, and section transitions support the product instead of competing with it.
+- The page is structured into reusable sections and product-specific primitives to keep iteration manageable as the experience grows.
