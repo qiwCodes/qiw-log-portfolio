@@ -1,31 +1,60 @@
-# Aether One
+# qiw.log Portfolio
+
+This repository is the codebase for my personal portfolio website, not a single project landing page.
+
+Live site: [portfolio-beige-three-71.vercel.app](https://portfolio-beige-three-71.vercel.app)
 
 ## Overview
 
-Aether One is a portfolio piece focused on translating a luxury hardware brand direction into a polished web experience. The project combines editorial-style layout, subtle motion, and a Three.js product stage that stays integrated with the page narrative instead of feeling bolted on.
+`qiw.log` is a design-forward portfolio built with Next.js 16 and React 19. The site presents my profile, selected work, and supporting project pages in a cinematic, motion-heavy visual system while keeping the production setup simple enough to maintain.
 
-## What This Project Shows
+## What the Site Includes
 
-- Cinematic landing-page art direction with a premium product focus
-- Scroll-linked 3D composition built with React Three Fiber and Drei
-- Shared product finish state between UI controls and the rendered model
-- Responsive layouts tuned separately for desktop and mobile storytelling
-- Reusable section/component structure instead of a one-file marketing page
+- Immersive homepage with animated sections and project highlights
+- Individual case-study pages for selected projects
+- Portfolio-focused metadata, sitemap, and robots configuration
+- Production deployment on Vercel
+- GitHub Actions workflow that deploys automatically on push to `main`
 
-## Stack
+## Tech Stack
 
 - Next.js 16
 - React 19
 - TypeScript
 - Tailwind CSS 4
 - Framer Motion
-- Three.js
-- React Three Fiber
-- Drei
+- GSAP
 
-## Technical Highlights
+## Project Structure
 
-- The hero and overview states are connected through a scroll-driven interpolation layer rather than isolated scenes, which keeps the transition feeling continuous.
-- Product finish selection is centralized in shared state so the UI and 3D presentation stay synchronized.
-- Motion is layered with restraint: reveal timing, ambient backgrounds, and section transitions support the product instead of competing with it.
-- The page is structured into reusable sections and product-specific primitives to keep iteration manageable as the experience grows.
+- `src/app` - App Router pages, metadata routes, and route handlers
+- `src/components` - UI components and motion-driven sections
+- `src/data` - Site-level content and project data
+- `.github/workflows` - GitHub Actions deployment workflow
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Production Checks
+
+```bash
+npm run lint
+npm run build
+npm run start
+```
+
+## Deployment
+
+- Production hosting: Vercel
+- Auto deploy: GitHub Actions on push to `main`
+
+## Notes
+
+- `/ai-workspace` exists as an internal/experimental page and is excluded from indexing.
+- Project content is managed from `src/data/projects.ts`.
