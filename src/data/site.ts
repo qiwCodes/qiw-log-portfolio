@@ -5,7 +5,7 @@ export const siteConfig = {
     "Creative full-stack developer portfolio by Motonori Kono (Qiw), focused on immersive web experiences, product interfaces, and design-forward engineering.",
   creator: "Motonori Kono",
   locale: "en_US",
-  url: "https://qiw-log-portfolio.vercel.app",
+  url: "https://portfolio-beige-three-71.vercel.app",
   email: "qiw.codes@gmail.com",
   social: {
     github: "https://github.com/qiwCodes",
